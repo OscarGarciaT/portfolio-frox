@@ -1,5 +1,3 @@
-import React from "react";
-
 import { styled } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
@@ -87,6 +85,7 @@ const Layout = ({ children }) => {
             <Icon color="primary">{open ? "menu_open" : "menu_close"}</Icon>
           </IconButton>
           <Box flexGrow={1} />
+          <Typography>Grupo FROX - Portafolio</Typography>
         </Toolbar>
       </AppBar>
       <Drawer
@@ -129,7 +128,7 @@ const Layout = ({ children }) => {
       </Drawer>
       <Main open={open}>
         <DrawerHeader />
-        {children}
+        <div className="p-10">{children}</div>
       </Main>
     </Box>
   );

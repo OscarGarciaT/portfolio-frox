@@ -1,13 +1,16 @@
 {
+  "homepage": "https://oscargarciat.github.io/portfolio-frox/",
   "name": "portfolio-frox",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "start": "vite",
-    "build": "vite build",
+    "build": "vite build --base=./",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@emotion/react": "^11.11.4",
@@ -16,6 +19,7 @@
     "@mui/icons-material": "^5.15.19",
     "@mui/material": "^5.15.19",
     "autoprefixer": "^10.4.19",
+    "gh-pages": "^6.1.1",
     "postcss-cli": "^11.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
