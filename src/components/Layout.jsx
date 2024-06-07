@@ -65,7 +65,7 @@ const Layout = ({ children }) => {
   useEffect(() => {
     setTimeout(() => {
       setOpen(true);
-    }, 500);
+    }, 900);
   }, []);
 
   const handleDrawerToggle = () => {
@@ -85,7 +85,7 @@ const Layout = ({ children }) => {
             <Icon color="primary">{open ? "menu_open" : "menu_close"}</Icon>
           </IconButton>
           <Box flexGrow={1} />
-          <Typography>Grupo FROX - Portafolio</Typography>
+          <Typography color="black">Grupo FROX - Portafolio</Typography>
         </Toolbar>
       </AppBar>
       <Drawer

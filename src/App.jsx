@@ -5,7 +5,7 @@ import {
   createTheme,
 } from "@mui/material";
 import Layout from "./components/Layout";
-import Intro from "./pages/Intro";
+import Portfolio from "./pages/Portfolio";
 
 const theme = createTheme({
   components: {
@@ -50,7 +50,7 @@ const App = () => {
       <ThemeProvider theme={theme}>
         <CssBaseline />
         <Layout>
-          <Intro />
+          <Portfolio />
         </Layout>
       </ThemeProvider>
     </StyledEngineProvider>
