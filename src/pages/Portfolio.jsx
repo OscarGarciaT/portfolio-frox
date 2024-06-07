@@ -56,9 +56,9 @@ const AnimatedAvatar = ({
         delay: delay,
       }}
       viewport={{ once: true }}
-      className="flex flex-col justify-around items-center"
+      className="flex flex-col justify-around items-center pb-7  md:pb-0"
     >
-      <div style={{ width: 150 }}>
+      <div style={{ width: 150 }} className="relative overflow-hidden">
         <img
           src={src}
           alt={alt}
@@ -95,7 +95,7 @@ const AnimatedAvatar = ({
 
 const GroupLogo = () => {
   return (
-    <div className="h-svh flex flex-col justify-around items-center">
+    <div className="h-auto md:h-svh flex flex-col justify-around items-center">
       <motion.div
         initial={{ opacity: 0, scale: 3 }}
         whileInView={{
@@ -106,11 +106,11 @@ const GroupLogo = () => {
           duration: 0.5,
         }}
         viewport={{ once: true }}
-        className="flex w-1/3 justify-center items-center"
+        className="flex w-1/3 justify-center items-center pb-10 md:pb-0"
       >
-        <FrxImage src={logoTransparentSrc} width={1000} />
+        <FrxImage src={logoTransparentSrc} width={200} />
       </motion.div>
-      <div className="flex flex-row -mt-80 w-full justify-around items-center">
+      <div className="flex flex-col md:flex-row w-full justify-around items-center">
         <AnimatedAvatar
           name={"Oscar Garcia"}
           role={"Programador"}
@@ -130,7 +130,7 @@ const GroupLogo = () => {
 
 const IntroMIDI = () => {
   return (
-    <div className="h-min flex flex-col md:flex-row justify-between items-center p-4">
+    <div className="h-min flex flex-col md:flex-row justify-between items-center pt-10">
       <motion.div
         initial={{ opacity: 0 }}
         viewport={{ once: true }}
@@ -162,7 +162,7 @@ const IntroMIDI = () => {
 
 const Portfolio = () => {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col px-6 py-6">
       <GroupLogo />
       <IntroMIDI />
     </div>
