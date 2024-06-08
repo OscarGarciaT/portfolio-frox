@@ -1,4 +1,4 @@
-import { Typography } from "@mui/material";
+import { Divider, Icon, Paper, Typography } from "@mui/material";
 import { motion } from "framer-motion";
 
 // Images
@@ -6,6 +6,7 @@ import tableroMidiSrc from "/assets/images/intro/MIDI-Tablero.png";
 import logoTransparentSrc from "/assets/images/logos/logo_transparent.png";
 import avatarPlaceholderSrc from "/assets/images/logos/avatar_placeholder.png";
 import logoOpaqueSrc from "/assets/images/logos/logo_opaque.png";
+import lightbulbSrc from "/assets/images/misc/lightbulb_transparent.png";
 
 // Components
 import FrxImage from "../components/multimedia/FrxImage";
@@ -23,8 +24,8 @@ const AnimatedImage = ({ src, hSlide, vSlide, width = 300 }) => {
 
   return (
     <motion.div
-      whileHover={{ scale: 1.2 }}
-      whileTap={{ scale: 1.1 }}
+      whileHover={{ scale: 1.1 }}
+      whileTap={{ scale: 1.05 }}
       initial={{ opacity: 0 }}
       whileInView={{
         opacity: 1,
@@ -32,6 +33,7 @@ const AnimatedImage = ({ src, hSlide, vSlide, width = 300 }) => {
         ...(vSlide ? { y: vSlideValues[vSlide] } : {}),
       }}
       viewport={{ once: true }}
+      transition={{ delay: 0.15 }}
       className="flex w-full md:w-1/3 justify-center items-center"
     >
       <FrxImage src={src} width={width} />
@@ -93,6 +95,70 @@ const AnimatedAvatar = ({
   );
 };
 
+const LeftSideIdea = ({ src, ideaName, description }) => {
+  return (
+    <div className="flex self-center w-2/3 pt-6">
+      <AnimatedImage src={src} hSlide="left" />
+      <div className="flex flex-col items-start pt-9 px-5">
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1, x: [100, 0] }}
+          viewport={{ once: true }}
+          className="flex items-center"
+        >
+          <Icon color="primary" style={{ fontSize: "2.5rem" }}>
+            lightbulb
+          </Icon>
+          <Typography fontSize={"2.5rem"} fontWeight={700} color="primary">
+            {ideaName}
+          </Typography>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1, y: [100, 0] }}
+          transition={{ delay: 0.1 }}
+          viewport={{ once: true }}
+          className="w-3/4"
+        >
+          <Typography>{description}</Typography>
+        </motion.div>
+      </div>
+    </div>
+  );
+};
+
+const RightSideIdea = ({ src, ideaName, description }) => {
+  return (
+    <div className="flex self-center w-2/3 pt-6">
+      <div className="flex flex-col items-end pt-9 px-5">
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1, x: [100, 0] }}
+          viewport={{ once: true }}
+          className="flex items-center"
+        >
+          <Icon color="primary" style={{ fontSize: "2.5rem" }}>
+            lightbulb
+          </Icon>
+          <Typography fontSize={"2.5rem"} fontWeight={700} color="primary">
+            {ideaName}
+          </Typography>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1, y: [100, 0] }}
+          transition={{ delay: 0.1 }}
+          viewport={{ once: true }}
+          className="w-3/4 text-right"
+        >
+          <Typography>{description}</Typography>
+        </motion.div>
+      </div>
+      <AnimatedImage src={src} hSlide="right" />
+    </div>
+  );
+};
+
 const GroupLogo = () => {
   return (
     <div className="h-auto md:h-svh flex flex-col justify-around items-center">
@@ -141,7 +207,11 @@ const IntroMIDI = () => {
         <Typography variant="h4" className="mb-5 text-center md:text-left">
           Proyecto MIDI - Realidad Aumentada
         </Typography>
-        <Typography fontWeight={400} fontSize={18} className="text-justify">
+        <Typography
+          fontWeight={400}
+          fontSize={"1.1rem"}
+          className="text-justify"
+        >
           Este proyecto se enfoca en desarrollar una experiencia de realidad
           aumentada en forma de videojuego para niños de 3 a 4 años. En este
           juego, los jugadores tienen como objetivo descubrir las emociones de
@@ -160,11 +230,167 @@ const IntroMIDI = () => {
   );
 };
 
+const IdeacionMIDI = () => {
+  return (
+    <div className="h-min flex flex-col md:flex-row justify-between items-center pt-10">
+      <motion.div
+        initial={{ opacity: 0 }}
+        viewport={{ once: true }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.5 }}
+        className="w-full mb-6 md:mb-1 md:mr-10 "
+      >
+        <Typography variant="h4" className="mb-5 text-center md:text-left">
+          Ideacion
+        </Typography>
+        <Typography
+          fontWeight={400}
+          fontSize={"1.1rem"}
+          className="text-justify"
+        >
+          Para llevar a cabo este proyecto, seguimos un proceso de ideación
+          utilizando técnicas como &quot;Storyboarding&quot;, &quot;Shout it
+          Out&quot; en grupo y también &quot;Research&quot;. Esto nos permitió
+          realizar una investigación para comprender mejor cuáles son las
+          tendencias actuales y por qué son populares. Después de este proceso,
+          generamos una serie de ideas que se presentan a continuación.
+        </Typography>
+        <div className="flex flex-col w-full pt-20">
+          <LeftSideIdea
+            src={tableroMidiSrc}
+            ideaName={"Idea 1"}
+            description={
+              "Nulla laoreet augue nisi, non ornare orci sagittis ac"
+            }
+          />
+          <RightSideIdea
+            src={tableroMidiSrc}
+            ideaName={"Idea 2"}
+            description={
+              "Nulla laoreet augue nisi, non ornare orci sagittis ac"
+            }
+          />
+          <LeftSideIdea
+            src={tableroMidiSrc}
+            ideaName={"Idea 3"}
+            description={
+              "Nulla laoreet augue nisi, non ornare orci sagittis ac"
+            }
+          />
+          <RightSideIdea
+            src={tableroMidiSrc}
+            ideaName={"Idea 4"}
+            description={
+              "Nulla laoreet augue nisi, non ornare orci sagittis ac"
+            }
+          />
+          <LeftSideIdea
+            src={tableroMidiSrc}
+            ideaName={"Idea 5"}
+            description={
+              "Nulla laoreet augue nisi, non ornare orci sagittis ac"
+            }
+          />
+          <RightSideIdea
+            src={tableroMidiSrc}
+            ideaName={"Idea 6"}
+            description={
+              "Nulla laoreet augue nisi, non ornare orci sagittis ac"
+            }
+          />
+          <LeftSideIdea
+            src={tableroMidiSrc}
+            ideaName={"Idea 7"}
+            description={
+              "Nulla laoreet augue nisi, non ornare orci sagittis ac"
+            }
+          />
+          <RightSideIdea
+            src={tableroMidiSrc}
+            ideaName={"Idea 8"}
+            description={
+              "Nulla laoreet augue nisi, non ornare orci sagittis ac"
+            }
+          />
+          <LeftSideIdea
+            src={tableroMidiSrc}
+            ideaName={"Idea 9"}
+            description={
+              "Nulla laoreet augue nisi, non ornare orci sagittis ac"
+            }
+          />
+          <RightSideIdea
+            src={tableroMidiSrc}
+            ideaName={"Idea 10"}
+            description={
+              "Nulla laoreet augue nisi, non ornare orci sagittis ac"
+            }
+          />
+        </div>
+      </motion.div>
+    </div>
+  );
+};
+
+const MejoresIdeasMIDI = () => {
+  return (
+    <div className="h-min flex flex-col md:flex-row justify-between items-center pt-10">
+      <motion.div
+        initial={{ opacity: 0 }}
+        viewport={{ once: true }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.5 }}
+        className="w-full mb-6 md:mb-1 md:mr-10 "
+      >
+        <Divider />
+        <div className="flex justify-center items-center my-5 mx-20 rounded-lg  bg-green-200">
+          <motion.div className="flex w-full justify-center items-center">
+            <Typography fontSize={"4rem"}>Mejores Ideas</Typography>
+          </motion.div>
+        </div>
+        <Divider />
+        <div className="flex flex-col w-full pt-20">
+          <Paper className="my-5">
+            <LeftSideIdea
+              src={tableroMidiSrc}
+              ideaName={"Idea 1"}
+              description={
+                "Nulla laoreet augue nisi, non ornare orci sagittis ac"
+              }
+            />
+          </Paper>
+          <Paper className="my-5">
+            <RightSideIdea
+              src={tableroMidiSrc}
+              ideaName={"Idea 2"}
+              description={
+                "Nulla laoreet augue nisi, non ornare orci sagittis ac"
+              }
+            />
+          </Paper>
+          <Paper className="my-5">
+            <LeftSideIdea
+              src={tableroMidiSrc}
+              ideaName={"Idea 1"}
+              description={
+                "Nulla laoreet augue nisi, non ornare orci sagittis ac"
+              }
+            />
+          </Paper>
+          <Divider className="mt-5" />
+        </div>
+      </motion.div>
+    </div>
+  );
+};
+
 const Portfolio = () => {
   return (
     <div className="flex flex-col px-6 py-6">
       <GroupLogo />
       <IntroMIDI />
+      <IdeacionMIDI />
+      <MejoresIdeasMIDI />
     </div>
   );
 };
