@@ -6,8 +6,18 @@ import {
 } from "@mui/material";
 import Layout from "./components/Layout";
 import Portfolio from "./pages/Portfolio";
+import { useRef } from "react";
 
 const theme = createTheme({
+  breakpoints: {
+    values: {
+      xs: 0,
+      sm: 640,
+      md: 768,
+      lg: 1024,
+      xl: 1280,
+    },
+  },
   components: {
     MuiPopover: {
       defaultProps: {
@@ -45,12 +55,19 @@ const theme = createTheme({
 });
 
 const App = () => {
+  const refs = {
+    somos: useRef(null),
+    intro: useRef(null),
+    ideacion: useRef(null),
+    mejoresideas: useRef(null),
+  };
+
   return (
     <StyledEngineProvider injectFirst>
       <ThemeProvider theme={theme}>
         <CssBaseline />
-        <Layout>
-          <Portfolio />
+        <Layout refs={refs}>
+          <Portfolio refs={refs}/>
         </Layout>
       </ThemeProvider>
     </StyledEngineProvider>

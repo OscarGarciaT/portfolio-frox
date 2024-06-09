@@ -61,7 +61,7 @@ const DrawerHeader = styled("div")(({ theme }) => ({
   justifyContent: "center",
 }));
 
-const Layout = ({ children }) => {
+const Layout = ({ children, refs }) => {
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
@@ -88,6 +88,18 @@ const Layout = ({ children }) => {
 
   const handleDrawerToggle = () => {
     setOpen((prevValue) => !prevValue);
+  };
+
+  const scrollToSection = (id) => {
+    const offset = 64;
+    const element = refs[id].current;
+    const elementPosition = element.getBoundingClientRect().top;
+    const offsetPosition = elementPosition + window.scrollY - offset;
+
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: "smooth",
+    });
   };
 
   return (
@@ -125,22 +137,28 @@ const Layout = ({ children }) => {
         <Divider />
         <List>
           <SideBarItem
-            onClick={() => {}}
+            onClick={() => scrollToSection("somos")}
             icon={<Icon>group</Icon>}
             label={"Quienes somos?"}
             tabId={"somos"}
           />
           <SideBarItem
-            onClick={() => {}}
+            onClick={() => scrollToSection("intro")}
+            icon={<Icon>token</Icon>}
+            label={"Sobre el proyecto"}
+            tabId={"intro"}
+          />
+          <SideBarItem
+            onClick={() => scrollToSection("ideacion")}
             icon={<Icon>lightbulb</Icon>}
             label={"Ideacion"}
             tabId={"ideacion"}
           />
           <SideBarItem
-            onClick={() => {}}
-            icon={<Icon>work</Icon>}
-            label={"Prototipo"}
-            tabId={"prototipo"}
+            onClick={() => scrollToSection("mejoresideas")}
+            icon={<Icon>stars</Icon>}
+            label={"Mejores Ideas"}
+            tabId={"mejoresideas"}
           />
         </List>
       </Drawer>
