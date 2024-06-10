@@ -132,9 +132,9 @@ const LeftSideIdea = ({ src, ideaName, description, marginBottom = 0 }) => {
           viewport={{ once: true }}
           className="flex items-center"
         >
-          <Icon color="primary" style={{ fontSize: "2.5rem" }}>
+          {/* <Icon color="primary" style={{ fontSize: "2.5rem" }}>
             lightbulb
-          </Icon>
+          </Icon> */}
           <Typography fontSize={"2.5rem"} fontWeight={700} color="primary">
             {ideaName}
           </Typography>
@@ -163,10 +163,10 @@ const RightSideIdea = ({ src, ideaName, description }) => {
           viewport={{ once: true }}
           className="flex items-center"
         >
-          <Icon color="primary" style={{ fontSize: "2.5rem" }}>
+          {/* <Icon color="primary" style={{ fontSize: "2.5rem" }}>
             lightbulb
-          </Icon>
-          <Typography fontSize={"2.5rem"} fontWeight={700} color="primary">
+          </Icon> */}
+          <Typography className="text-center  md:text-right w-auto" fontSize={"2.5rem"} fontWeight={700} color="primary">
             {ideaName}
           </Typography>
         </motion.div>
