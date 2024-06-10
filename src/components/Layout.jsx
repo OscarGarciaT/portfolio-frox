@@ -1,4 +1,4 @@
-import { styled } from "@mui/material/styles";
+import { styled, useTheme } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
 import MuiAppBar from "@mui/material/AppBar";
@@ -6,7 +6,7 @@ import Toolbar from "@mui/material/Toolbar";
 import List from "@mui/material/List";
 import Divider from "@mui/material/Divider";
 import IconButton from "@mui/material/IconButton";
-import { Icon, Typography } from "@mui/material";
+import { Icon, Typography, useMediaQuery } from "@mui/material";
 
 import { useEffect, useState } from "react";
 import SideBarItem from "./SidebarItem";
@@ -62,11 +62,18 @@ const DrawerHeader = styled("div")(({ theme }) => ({
 }));
 
 const Layout = ({ children, refs }) => {
+  const theme = useTheme();
+  const isDesktop = useMediaQuery(theme.breakpoints.up("md"));
+
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
+    console.log(`isDesktop: ${isDesktop}`)
+
     setTimeout(() => {
-      setOpen(true);
+      if (isDesktop) {
+        setOpen(true);
+      }
     }, 900);
   }, []);
 
