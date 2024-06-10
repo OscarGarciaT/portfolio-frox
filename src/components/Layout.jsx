@@ -68,8 +68,6 @@ const Layout = ({ children, refs }) => {
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
-    console.log(`isDesktop: ${isDesktop}`)
-
     setTimeout(() => {
       if (isDesktop) {
         setOpen(true);

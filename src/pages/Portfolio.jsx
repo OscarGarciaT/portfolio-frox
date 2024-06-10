@@ -31,6 +31,15 @@ import dragon_amigoSrc from "/assets/images/ideas/dragon_amigo.png";
 import escenarios_emocionalesSrc from "/assets/images/ideas/escenarios_emocionales.jpg";
 import dia_lluviosoSrc from "/assets/images/ideas/dia_lluvioso.jpg";
 import adivina_que_sienteSrc from "/assets/images/ideas/adivina_que_siente.jpg";
+import baile_dragonSrc from "/assets/images/ideas/baile_dragon.png";
+import dragon_jrSrc from "/assets/images/ideas/dragon_jr.jpg";
+import dragones_emocionadosSrc from "/assets/images/ideas/dragones_emocionados.jpg";
+import puzzle_emocionesSrc from "/assets/images/ideas/puzzle_emociones.png";
+
+// Mejores ideas
+import juegos_empatiaSrc from "/assets/images/ideas/juegos_empatia.jpg";
+import caza_simbolosSrc from "/assets/images/ideas/caza_simbolos.jpg";
+import cuentacuentos_interactivoSrc from "/assets/images/ideas/cuentacuentos_interactivo.jpg";
 
 // Components
 import FrxImage from "../components/multimedia/FrxImage";
@@ -135,7 +144,12 @@ const LeftSideIdea = ({ src, ideaName, description, marginBottom = 0 }) => {
           {/* <Icon color="primary" style={{ fontSize: "2.5rem" }}>
             lightbulb
           </Icon> */}
-          <Typography fontSize={"2.5rem"} fontWeight={700} color="primary">
+          <Typography
+            className="text-center md:text-left"
+            fontSize={"2.5rem"}
+            fontWeight={700}
+            color="primary"
+          >
             {ideaName}
           </Typography>
         </motion.div>
@@ -144,7 +158,7 @@ const LeftSideIdea = ({ src, ideaName, description, marginBottom = 0 }) => {
           whileInView={{ opacity: 1, y: [100, 0] }}
           transition={{ delay: 0.1 }}
           viewport={{ once: true }}
-          className="w-full md:w-3/4 text-center md:text-left"
+          className="w-full md:w-3/4 text-center md:text-left my-3 md:my-0"
         >
           <Typography>{description}</Typography>
         </motion.div>
@@ -166,7 +180,12 @@ const RightSideIdea = ({ src, ideaName, description }) => {
           {/* <Icon color="primary" style={{ fontSize: "2.5rem" }}>
             lightbulb
           </Icon> */}
-          <Typography className="text-center  md:text-right w-auto" fontSize={"2.5rem"} fontWeight={700} color="primary">
+          <Typography
+            className="text-center  md:text-right w-auto"
+            fontSize={"2.5rem"}
+            fontWeight={700}
+            color="primary"
+          >
             {ideaName}
           </Typography>
         </motion.div>
@@ -175,7 +194,7 @@ const RightSideIdea = ({ src, ideaName, description }) => {
           whileInView={{ opacity: 1, y: [100, 0] }}
           transition={{ delay: 0.1 }}
           viewport={{ once: true }}
-          className="w-full md:w-3/4 text-center  md:text-right"
+          className="w-full md:w-3/4 text-center md:text-right my-3 md:my-0"
         >
           <Typography>{description}</Typography>
         </motion.div>
@@ -201,7 +220,7 @@ const BestIdea = ({
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          className="flex w-full md:w-1/2 justify-center items-center"
+          className="flex w-full md:w-1/2 justify-center items-center p-2"
         >
           <FrxImage src={imageSrc} width={"100%"} />
         </motion.div>
@@ -220,7 +239,12 @@ const BestIdea = ({
             <Icon color="primary" style={{ fontSize: "2.5rem" }}>
               lightbulb
             </Icon>
-            <Typography fontSize={"2.5rem"} fontWeight={700} color="primary">
+            <Typography
+              className="text-center"
+              fontSize={"2.5rem"}
+              fontWeight={700}
+              color="primary"
+            >
               {ideaName}
             </Typography>
           </motion.div>
@@ -379,11 +403,18 @@ const IdeacionMIDI = () => {
           generamos una serie de ideas que se presentan a continuación.
         </Typography>
         <div className="flex flex-col w-full justify-center items-center pt-20">
-          <LeftSideIdea
+          {/* <LeftSideIdea
             src={guaridaSrc}
             ideaName={"Guarida del dragoncito"}
             description={
               "El niño explora la guarida del dragoncito, donde cada objeto representa una emoción. Al tocar un objeto, se reproduce un sonido correspondiente a la emoción y aparece una imagen que la ilustra. Por ejemplo, un nido acogedor para la felicidad, una montaña de tesoros para la avaricia, una nube de humo para la ira. El niño puede interactuar con los objetos para aprender a identificar las emociones del dragoncito."
+            }
+          /> */}
+          <LeftSideIdea
+            src={festival_emocionesSrc}
+            ideaName={"Festival de Emociones del Dragoncito"}
+            description={
+              "El niño participa en un festival donde el dragoncito debe demostrar diferentes emociones a través de sus movimientos y expresiones. El niño guía al dragoncito para que exprese correctamente las emociones, utilizando sonidos y animaciones. Este juego ayuda al niño a desarrollar su propio reconocimiento emocional y empatía."
             }
           />
           <RightSideIdea
@@ -408,17 +439,24 @@ const IdeacionMIDI = () => {
             }
           />
           <LeftSideIdea
-            src={festival_emocionesSrc}
-            ideaName={"Festival de Emociones del Dragoncito"}
+            src={dragones_emocionadosSrc}
+            ideaName={"Dragones emocionados"}
             description={
-              "El niño participa en un festival donde el dragoncito debe demostrar diferentes emociones a través de sus movimientos y expresiones. El niño guía al dragoncito para que exprese correctamente las emociones, utilizando sonidos y animaciones. Este juego ayuda al niño a desarrollar su propio reconocimiento emocional y empatía."
+              "El niño escucha un sonido durante unos segundos. Luego de escuchar el sonido, el niño debe elegir la emoción que el dragoncito está sintiendode una lista de opciones. Este juego ayuda a desarrollar la capacidad auditiva y la asociación entre sonidos y emocionesEs un juego donde el jugador solo podra escuchar sonidos del dragon, por medio de este sonido se trasmiten emociones. Una vez que la emocion haya sido descubierta, se revelara la animacion del dragon haciendo el sonido. En caso de errar mientras se juega, se daran cartas pistas para averiguar la expresión del dragón. Hay 7 dragones con diferentes emociones y sonidos, se adivinar todos para ganar el juego."
             }
           />
-          <RightSideIdea
+          {/* <RightSideIdea
             src={memoria_emociones_dragoncitoSrc}
             ideaName={"Juego de memoria con las emociones del dragoncito"}
             description={
               "Se puede establecer un tiempo para que el dragoncito presente una emoción (feliz, triste, enojado, etc). Una vez identificada la emoción, el niño debe recordarla, para conforme va pasando el tiempo ir recordando el orden en que el dragón se sintió de tal manera. Mecánica de pequeños toques en la pantalla, donde se encuentran las posibles emociones y el niño debe elegir el orden. La dificultad sube a medida que se van desplegando más emociones."
+            }
+          /> */}
+          <RightSideIdea
+            src={puzzle_emocionesSrc}
+            ideaName={"Puzzle de las emociones"}
+            description={
+              "En este puzzle, tenemos que armar la carita del dragón con una emocion caracteristica, cada pieza tendra una nota pista sobre la emoción para descubrirla antes de armarla. Cada vez que se acierte una pieza, se escuchara un sonido del dragon con respecto a la emoción. En caso de ponerla mal, la pieza se pintará en blanco y negro."
             }
           />
           <LeftSideIdea
@@ -436,10 +474,10 @@ const IdeacionMIDI = () => {
             }
           />
           <LeftSideIdea
-            src={adivina_que_sienteSrc}
-            ideaName={"Adivina qué siente el Dragoncito"}
+            src={baile_dragonSrc}
+            ideaName={"El baile dragón"}
             description={
-              "El niño escucha un sonido durante unos segundos. Luego de escuchar el sonido, el niño debe elegir la emoción que el dragoncito está sintiendode una lista de opciones. Este juego ayuda a desarrollar la capacidad auditiva y la asociación entre sonidos y emociones."
+              "El juego se ambienta en una fiesta donde hay dragones bailando, pero cada uno baila con diferentes emociones, entre enojones, tristes o felices. El juego escogerá una emoción al azar, y el jugador que identifique primero al dragón con la emoción, ganará un punto. Ganará el jugador con más puntos al final de escoger a todos los dragones con las emociones."
             }
           />
           <RightSideIdea
@@ -447,6 +485,20 @@ const IdeacionMIDI = () => {
             ideaName={"El dragoncito está triste"}
             description={
               "El contexto en el que se presenta es un día lluvioso y gris, con el dragón sentado cabizbajo. El niño puede dar toques a la pantalla, donde se le despliega opciones que él puede escoger para consolar al dragón o cambiar el ambiente. También pueden hacer que aparezcan amigos que hagan sentir mejor al dragoncito. El objetivo sería que el niño comprenda que cuando se siente triste hay cosas que pueden alegrarlos y ellos pueden hacer algo para ayudar a quien se sienta así."
+            }
+          />
+          <LeftSideIdea
+            src={adivina_que_sienteSrc}
+            ideaName={"Adivina qué siente el Dragoncito"}
+            description={
+              "El niño escucha un sonido durante unos segundos. Luego de escuchar el sonido, el niño debe elegir la emoción que el dragoncito está sintiendode una lista de opciones. Este juego ayuda a desarrollar la capacidad auditiva y la asociación entre sonidos y emociones."
+            }
+          />
+          <RightSideIdea
+            src={dragon_jrSrc}
+            ideaName={"Dragon Jr"}
+            description={
+              "Este es un juego sobre dragones bebes, como los bebes son mas expresivos, se debera cuidar un bebe que cambia de emocion al azar. Cada vez que el dragón bebe cambie de emoción , se debe descubrir que emoción tiene y elegir la correcta para que le bebe se calme. Se ganará cuando la barra de satisfacción del bebe haya sido completado. Ganará el jugador que primero llene la barra de su dragon bebe"
             }
           />
         </div>
@@ -476,60 +528,27 @@ const MejoresIdeasMIDI = () => {
         <Divider />
         <div className="flex flex-col w-full pt-5">
           <BestIdea
-            imageSrc={tableroMidiSrc}
-            ideaName={"Idea 1"}
-            generalDescription={`Lorem ipsum dolor sit amet, 
-              consectetur adipiscing elit. Donec in consectetur enim. 
-              Quisque volutpat diam id ligula dapibus dignissim. Cras facilisis 
-              purus sit amet urna varius mattis. Phasellus tristique arcu at erat lobortis,
-              eu condimentum arcu viverra. Mauris nec leo sed dolor pulvinar placerat non 
-              sed dolor. Praesent est sem, eleifend a bibendum in, congue tincidunt nibh. 
-              Phasellus tincidunt blandit tortor mollis sodales. Nullam cursus tortor libero,
-              a aliquam est ultrices vitae. Proin ut diam suscipit, congue ex condimentum, 
-              interdum ex. In sit amet diam egestas, aliquet justo eu, lobortis odio. 
-              Quisque finibus ligula vel erat egestas rhoncus. Nullam eu felis et turpis 
-              lobortis dapibus at vel felis. Proin elit magna, sollicitudin ut feugiat in, 
-              aliquet sed tellus. Cras auctor congue est in placerat.`}
+            imageSrc={juegos_empatiaSrc}
+            ideaName={"Juegos de empatía"}
+            generalDescription={`Juegos donde los niños deben reconocer y responder a las emociones del dragón y otros personajes. Un juego donde el dragonsito muestra diferentes emociones y los niños deben elegir el ítem correcto para consolarlo o alegrarlo(un juguete para alegrar, una manta para consolar). Los niños arrastran y sueltan elementos en la pantalla hacia el personaje, observando su reacción y aprendiendo cómo diferentes acciones pueden afectar las emociones.`}
             selectionDescription={
-              "Aliquam vulputate risus lorem. Vivamus efficitur felis ut velit dignissim placerat. Suspendisse potenti."
+              "Creemos que esta idea es buena porque combina mecánicas interactivas y sencillas, como arrastrar y soltar, con el desarrollo de habilidades emocionales cruciales para niños de 3 a 4 años. Al reconocer y responder a las emociones del dragón y otros personajes, los niños aprenden a identificar y reaccionar adecuadamente a diferentes estados emocionales. Los elementos visuales y las reacciones animadas proporcionan una respuesta inmediata que refuerza el aprendizaje, manteniendo el interés y la diversión. La variedad de ítems y emociones evita la monotonía y fomenta la empatía, mientras que el feedback positivo motiva a los niños. Además, es una actividad educativa alineada con las metas pedagógicas y puede ser expandida con nuevos personajes y escenarios, garantizando su adaptabilidad y durabilidad como herramienta de aprendizaje y entretenimiento."
             }
           />
           <BestIdea
-            imageSrc={tableroMidiSrc}
-            ideaName={"Idea 2"}
-            generalDescription={`Lorem ipsum dolor sit amet, 
-              consectetur adipiscing elit. Donec in consectetur enim. 
-              Quisque volutpat diam id ligula dapibus dignissim. Cras facilisis 
-              purus sit amet urna varius mattis. Phasellus tristique arcu at erat lobortis,
-              eu condimentum arcu viverra. Mauris nec leo sed dolor pulvinar placerat non 
-              sed dolor. Praesent est sem, eleifend a bibendum in, congue tincidunt nibh. 
-              Phasellus tincidunt blandit tortor mollis sodales. Nullam cursus tortor libero,
-              a aliquam est ultrices vitae. Proin ut diam suscipit, congue ex condimentum, 
-              interdum ex. In sit amet diam egestas, aliquet justo eu, lobortis odio. 
-              Quisque finibus ligula vel erat egestas rhoncus. Nullam eu felis et turpis 
-              lobortis dapibus at vel felis. Proin elit magna, sollicitudin ut feugiat in, 
-              aliquet sed tellus. Cras auctor congue est in placerat.`}
+            imageSrc={caza_simbolosSrc}
+            ideaName={"Caza de símbolos emocionales"}
+            generalDescription={`Los niños buscan y recogen símbolos que representan diferentes emociones en su entorno. Ejemplos de los símbolos: Un corazón para el amor, una nube para la tristeza, un sol para la alegría. Usando la cámara del dispositivo, los niños escanean el entorno para encontrar y coleccionar estos símbolos. Cada símbolo desbloquea una animación o un mensaje educativo sobre la emoción correspondiente.`}
             selectionDescription={
-              "Aliquam vulputate risus lorem. Vivamus efficitur felis ut velit dignissim placerat. Suspendisse potenti."
+              "Creemos que esta idea es buena porque utiliza la realidad aumentada para crear una experiencia de juego inmersiva donde los niños buscan y recogen símbolos de emociones en su entorno. Al escanear con la cámara del dispositivo, los niños interactúan activamente con el mundo real, lo que aumenta su implicación y curiosidad. Los símbolos, como un corazón para el amor o una nube para la tristeza, son fáciles de reconocer y asocian de forma intuitiva emociones con imágenes concretas. Cada símbolo desbloquea animaciones o mensajes educativos, proporcionando feedback inmediato y manteniendo el interés de los niños. Este enfoque no solo enseña a identificar y comprender emociones, sino que también promueve el aprendizaje a través del juego y la exploración, fomentando habilidades cognitivas y emocionales. La combinación de tecnología y educación hace que el juego sea atractivo y relevante, adaptable a diferentes entornos y con potencial de expansión mediante la introducción de nuevos símbolos y emociones."
             }
           />
           <BestIdea
-            imageSrc={tableroMidiSrc}
-            ideaName={"Idea 3"}
-            generalDescription={`Lorem ipsum dolor sit amet, 
-              consectetur adipiscing elit. Donec in consectetur enim. 
-              Quisque volutpat diam id ligula dapibus dignissim. Cras facilisis 
-              purus sit amet urna varius mattis. Phasellus tristique arcu at erat lobortis,
-              eu condimentum arcu viverra. Mauris nec leo sed dolor pulvinar placerat non 
-              sed dolor. Praesent est sem, eleifend a bibendum in, congue tincidunt nibh. 
-              Phasellus tincidunt blandit tortor mollis sodales. Nullam cursus tortor libero,
-              a aliquam est ultrices vitae. Proin ut diam suscipit, congue ex condimentum, 
-              interdum ex. In sit amet diam egestas, aliquet justo eu, lobortis odio. 
-              Quisque finibus ligula vel erat egestas rhoncus. Nullam eu felis et turpis 
-              lobortis dapibus at vel felis. Proin elit magna, sollicitudin ut feugiat in, 
-              aliquet sed tellus. Cras auctor congue est in placerat.`}
+            imageSrc={cuentacuentos_interactivoSrc}
+            ideaName={"Cuentacuentos interactivo"}
+            generalDescription={`Los niños ayudan al dragonsito a contar una historia, seleccionando diferentes emociones para cada parte del cuento. Ellos pueden elegir si un personaje se siente valiente o asustado en una situación específica. Los niños tocan opciones en la pantalla que cambian la dirección de la historia, viendo cómo diferentes emociones afectan el desarrollo de la trama. Pueden escuchar al personaje narrar el cuento con las emociones seleccionadas.`}
             selectionDescription={
-              "Aliquam vulputate risus lorem. Vivamus efficitur felis ut velit dignissim placerat. Suspendisse potenti."
+              "Creemos que esta idea es buena porque permite a los niños interactuar creativamente con el dragón al contar historias, eligiendo emociones para cada parte del cuento. Los niños seleccionan cómo se siente un personaje en situaciones específicas, como valiente o asustado, y ven cómo estas elecciones afectan la trama. Esta mecánica interactiva y de toma de decisiones fomenta la creatividad y el pensamiento crítico, al mismo tiempo que enseña el impacto de las emociones en las narrativas. Escuchar al personaje narrar el cuento con las emociones seleccionadas proporciona una experiencia auditiva enriquecedora, manteniendo el interés y la atención de los niños. Además, la variabilidad en la historia según las emociones elegidas hace que el juego sea rejugable y siempre novedoso, promoviendo habilidades emocionales y narrativas de manera divertida y educativa."
             }
           />
           <Divider className="mt-5" />
