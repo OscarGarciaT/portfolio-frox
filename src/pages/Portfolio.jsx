@@ -256,7 +256,7 @@ const BestIdea = ({
             className="w-3/4 text-left mb-5"
           >
             <Typography fontSize={"1.3rem"} fontWeight={600}>
-              Descripcion
+              Descripción
             </Typography>
           </motion.div>
           <motion.div
@@ -276,7 +276,7 @@ const BestIdea = ({
             className="w-3/4 text-left mb-5"
           >
             <Typography fontSize={"1.3rem"} fontWeight={600}>
-              Por que creemos que es buena?
+              ¿Por qué creemos que es buena?
             </Typography>
           </motion.div>
           <motion.div
@@ -315,26 +315,26 @@ const GroupLogo = () => {
         <AnimatedAvatar
           src={oscarAvatar}
           name={"Oscar Garcia"}
-          role={"Programador"}
+          role={"Game Programmer"}
           delay={0.6}
         />
         <AnimatedAvatar
           src={xavierAvatar}
           name={"Xavier Cedeno"}
-          role={"Ideador"}
+          role={"Game Designer"}
           delay={0.65}
         />
         <AnimatedAvatar
           src={juanAvatar}
           name={"Juan Jimenez"}
-          role={"Director Creativo"}
-          delay={0.75}
+          role={"Game Designer"}
+          delay={0.7}
         />
         <AnimatedAvatar
           src={frankAvatar}
           name={"Frank Vera"}
-          role={"Analista"}
-          delay={0.7}
+          role={"Game Designer"}
+          delay={0.75}
         />
       </div>
     </div>
@@ -388,7 +388,7 @@ const IdeacionMIDI = () => {
         className="w-full mb-6 md:mb-1 md:mr-10 "
       >
         <Typography variant="h4" className="mb-5 text-center md:text-left">
-          Ideacion
+          Ideación
         </Typography>
         <Typography
           fontWeight={400}
@@ -403,13 +403,6 @@ const IdeacionMIDI = () => {
           generamos una serie de ideas que se presentan a continuación.
         </Typography>
         <div className="flex flex-col w-full justify-center items-center pt-20">
-          {/* <LeftSideIdea
-            src={guaridaSrc}
-            ideaName={"Guarida del dragoncito"}
-            description={
-              "El niño explora la guarida del dragoncito, donde cada objeto representa una emoción. Al tocar un objeto, se reproduce un sonido correspondiente a la emoción y aparece una imagen que la ilustra. Por ejemplo, un nido acogedor para la felicidad, una montaña de tesoros para la avaricia, una nube de humo para la ira. El niño puede interactuar con los objetos para aprender a identificar las emociones del dragoncito."
-            }
-          /> */}
           <LeftSideIdea
             src={festival_emocionesSrc}
             ideaName={"Festival de Emociones del Dragoncito"}
@@ -445,13 +438,6 @@ const IdeacionMIDI = () => {
               "El niño escucha un sonido durante unos segundos. Luego de escuchar el sonido, el niño debe elegir la emoción que el dragoncito está sintiendode una lista de opciones. Este juego ayuda a desarrollar la capacidad auditiva y la asociación entre sonidos y emocionesEs un juego donde el jugador solo podra escuchar sonidos del dragon, por medio de este sonido se trasmiten emociones. Una vez que la emocion haya sido descubierta, se revelara la animacion del dragon haciendo el sonido. En caso de errar mientras se juega, se daran cartas pistas para averiguar la expresión del dragón. Hay 7 dragones con diferentes emociones y sonidos, se adivinar todos para ganar el juego."
             }
           />
-          {/* <RightSideIdea
-            src={memoria_emociones_dragoncitoSrc}
-            ideaName={"Juego de memoria con las emociones del dragoncito"}
-            description={
-              "Se puede establecer un tiempo para que el dragoncito presente una emoción (feliz, triste, enojado, etc). Una vez identificada la emoción, el niño debe recordarla, para conforme va pasando el tiempo ir recordando el orden en que el dragón se sintió de tal manera. Mecánica de pequeños toques en la pantalla, donde se encuentran las posibles emociones y el niño debe elegir el orden. La dificultad sube a medida que se van desplegando más emociones."
-            }
-          /> */}
           <RightSideIdea
             src={puzzle_emocionesSrc}
             ideaName={"Puzzle de las emociones"}

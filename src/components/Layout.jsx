@@ -144,7 +144,7 @@ const Layout = ({ children, refs }) => {
           <SideBarItem
             onClick={() => scrollToSection("somos")}
             icon={<Icon>group</Icon>}
-            label={"Quienes somos?"}
+            label={"¿Quiénes somos?"}
             tabId={"somos"}
           />
           <SideBarItem
@@ -156,7 +156,7 @@ const Layout = ({ children, refs }) => {
           <SideBarItem
             onClick={() => scrollToSection("ideacion")}
             icon={<Icon>lightbulb</Icon>}
-            label={"Ideacion"}
+            label={"Ideación"}
             tabId={"ideacion"}
           />
           <SideBarItem
