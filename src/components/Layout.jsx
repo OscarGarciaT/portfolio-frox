@@ -1,3 +1,5 @@
+import { useEffect, useState } from "react";
+
 import { styled, useTheme } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
@@ -8,9 +10,10 @@ import Divider from "@mui/material/Divider";
 import IconButton from "@mui/material/IconButton";
 import { Icon, Typography, useMediaQuery } from "@mui/material";
 
-import { useEffect, useState } from "react";
 import SideBarItem from "./SidebarItem";
-import Scrollbars from "rc-scrollbars";
+import FrxImage from "./multimedia/FrxImage";
+
+import logoTransparentSrc from "/assets/images/logos/logo_transparent.png";
 
 const drawerWidth = 222;
 
@@ -125,7 +128,8 @@ const Layout = ({ children, refs }) => {
             <Icon color="primary">{open ? "menu_open" : "menu_close"}</Icon>
           </IconButton>
           <Box flexGrow={1} />
-          <Typography color="black">FROX</Typography>
+          {/* <Typography color="black">FROX</Typography> */}
+          <FrxImage src={logoTransparentSrc} width={60} />
         </Toolbar>
       </AppBar>
       <Drawer

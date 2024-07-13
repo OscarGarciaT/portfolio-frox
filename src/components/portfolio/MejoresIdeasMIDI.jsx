@@ -51,7 +51,6 @@ const MejoresIdeasMIDI = () => {
               "Creemos que esta idea es buena porque permite a los niños interactuar creativamente con el dragón al contar historias, eligiendo emociones para cada parte del cuento. Los niños seleccionan cómo se siente un personaje en situaciones específicas, como valiente o asustado, y ven cómo estas elecciones afectan la trama. Esta mecánica interactiva y de toma de decisiones fomenta la creatividad y el pensamiento crítico, al mismo tiempo que enseña el impacto de las emociones en las narrativas. Escuchar al personaje narrar el cuento con las emociones seleccionadas proporciona una experiencia auditiva enriquecedora, manteniendo el interés y la atención de los niños. Además, la variabilidad en la historia según las emociones elegidas hace que el juego sea rejugable y siempre novedoso, promoviendo habilidades emocionales y narrativas de manera divertida y educativa."
             }
           />
-          <Divider className="mt-5" />
         </div>
       </motion.div>
     </div>

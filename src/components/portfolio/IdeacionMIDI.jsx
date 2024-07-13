@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Typography } from "@mui/material";
+import { Divider, Typography } from "@mui/material";
 
 import { LeftSideIdea, RightSideIdea } from "../frox/AnimatedIdeas";
 
@@ -43,13 +43,19 @@ const IdeacionMIDI = () => {
         transition={{ duration: 0.5 }}
         className="w-full mb-6 md:mb-1 md:mr-10 "
       >
-        <Typography variant="h4" className="mb-5 text-center md:text-left">
-          Ideación
-        </Typography>
+        <Divider />
+        <div className="flex justify-center items-center my-5 mx-5 md:mx-20 rounded-lg  bg-green-200">
+          <motion.div className="flex w-full justify-center items-center">
+            <Typography className="text-center" fontSize={"4rem"}>
+              Ideacion
+            </Typography>
+          </motion.div>
+        </div>
+        <Divider />
         <Typography
           fontWeight={400}
           fontSize={"1.1rem"}
-          className="text-center md:text-left"
+          className="text-center md:text-left mt-5"
         >
           Para llevar a cabo este proyecto, seguimos un proceso de ideaci ón
           utilizando técnicas como &quot;Shout it Out&quot; en grupo y también

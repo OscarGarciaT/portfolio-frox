@@ -1,4 +1,4 @@
-import { Typography } from "@mui/material";
+import { Divider, Typography } from "@mui/material";
 import { motion } from "framer-motion";
 
 import AnimatedImage from "../frox/AnimatedImage";
@@ -10,6 +10,15 @@ import paginaEmocionesSrc from "/assets/images/intro/pagina_emociones.png";
 const IntroMIDI = () => {
   return (
     <>
+      <Divider />
+      <div className="flex justify-center items-center my-5 mx-5 md:mx-20 rounded-lg  bg-green-200">
+        <motion.div className="flex w-full justify-center items-center">
+          <Typography className="text-center" fontSize={"4rem"}>
+            Emociones en Realidad Aumentada
+          </Typography>
+        </motion.div>
+      </div>
+      <Divider />
       <div className="h-min flex flex-col md:flex-row justify-between items-center pt-10 md:items-start">
         <motion.div
           initial={{ opacity: 0 }}
@@ -18,9 +27,6 @@ const IntroMIDI = () => {
           transition={{ duration: 0.5 }}
           className="w-full md:w-2/3 mb-6 md:mb-1 md:mr-10 "
         >
-          <Typography variant="h4" className="mb-5 text-center md:text-left">
-            Proyecto MIDI - Emociones en Realidad Aumentada
-          </Typography>
           <Typography
             fontWeight={400}
             fontSize={"1.1rem"}
