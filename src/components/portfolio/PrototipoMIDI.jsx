@@ -24,7 +24,8 @@ import portada_pocionesSrc from "/assets/images/prototipo/portada_pociones.png";
 import portada_objetosSrc from "/assets/images/prototipo/portada_objetos.png";
 
 // pociones
-import pociones_storytelling from "/assets/images/prototipo/portada_pociones.png";
+import pociones_storytelling from "/assets/images/prototipo/pociones_storytelling.jpeg";
+import pociones_storytelling2 from "/assets/images/prototipo/pociones_storytelling2.jpeg";
 import pociones_mecanica1 from "/assets/images/prototipo/pociones_mecanica1.png";
 import pociones_mecanica2 from "/assets/images/prototipo/pociones_mecanica2.png";
 import pociones_mecanica3 from "/assets/images/prototipo/pociones_mecanica3.png";
@@ -41,7 +42,8 @@ import pociones_seleccionar_pocion from "/assets/gifs/prototipo_pociones/chrome_
 import pociones_pocion_incorrecta from "/assets/gifs/prototipo_pociones/chrome_VFNWQK83dk.gif";
 
 // objetos
-import objetos_storytelling from "/assets/images/prototipo/portada_pociones.png";
+import objetos_storytelling from "/assets/images/prototipo/objetos_storytelling.jpg";
+import objetos_storytelling2 from "/assets/images/prototipo/objetos_storytelling2.jpg";
 import objetos_mecanica1 from "/assets/images/prototipo/objetos_mecanica1.png";
 import objetos_mecanica2 from "/assets/images/prototipo/objetos_mecanica2.png";
 import objetos_mecanica3 from "/assets/images/prototipo/objetos_mecanica3.png";
@@ -231,6 +233,7 @@ const PrototipoMIDI = () => {
                   juego.
                 </Typography>
                 <FrxImage src={pociones_storytelling} className="my-2" />
+                <FrxImage src={pociones_storytelling2} className="my-2" />
               </div>
             </Scrollbars>
             <Scrollbars autoHeight autoHeightMin={400} autoHeightMax={600}>
@@ -460,6 +463,7 @@ const PrototipoMIDI = () => {
                   desarrollar un nivel y las interacciones del juego.
                 </Typography>
                 <FrxImage src={objetos_storytelling} className="my-2" />
+                <FrxImage src={objetos_storytelling2} className="my-2" />
               </div>
             </Scrollbars>
             <Scrollbars autoHeight autoHeightMin={400} autoHeightMax={600}>
