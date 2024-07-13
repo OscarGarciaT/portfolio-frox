@@ -8,12 +8,10 @@ import {
   Dialog,
   DialogActions,
   DialogContent,
-  DialogContentText,
   DialogTitle,
   Divider,
   List,
   ListItem,
-  Paper,
   Tab,
   Tabs,
   Typography,
@@ -26,6 +24,15 @@ import portada_pocionesSrc from "/assets/images/prototipo/portada_pociones.png";
 import portada_objetosSrc from "/assets/images/prototipo/portada_objetos.png";
 
 // pociones
+import pociones_storytelling from "/assets/images/prototipo/portada_pociones.png";
+import pociones_mecanica1 from "/assets/images/prototipo/pociones_mecanica1.png";
+import pociones_mecanica2 from "/assets/images/prototipo/pociones_mecanica2.png";
+import pociones_mecanica3 from "/assets/images/prototipo/pociones_mecanica3.png";
+import pociones_mecanica4 from "/assets/images/prototipo/pociones_mecanica4.png";
+import pociones_mecanica5 from "/assets/images/prototipo/pociones_mecanica5.png";
+import pociones_mecanica6 from "/assets/images/prototipo/pociones_mecanica6.png";
+
+// pociones gif
 import prototipo_pocionesSrc from "/assets/gifs/prototipo_pociones/prototipo_pociones.gif";
 import pociones_mirar from "/assets/gifs/prototipo_pociones/chrome_FCsiLaVqdo.gif";
 import pociones_pocion_correcta from "/assets/gifs/prototipo_pociones/chrome_hADGapusu3.gif";
@@ -34,6 +41,15 @@ import pociones_seleccionar_pocion from "/assets/gifs/prototipo_pociones/chrome_
 import pociones_pocion_incorrecta from "/assets/gifs/prototipo_pociones/chrome_VFNWQK83dk.gif";
 
 // objetos
+import objetos_storytelling from "/assets/images/prototipo/portada_pociones.png";
+import objetos_mecanica1 from "/assets/images/prototipo/objetos_mecanica1.png";
+import objetos_mecanica2 from "/assets/images/prototipo/objetos_mecanica2.png";
+import objetos_mecanica3 from "/assets/images/prototipo/objetos_mecanica3.png";
+import objetos_mecanica4 from "/assets/images/prototipo/objetos_mecanica4.png";
+import objetos_mecanica5 from "/assets/images/prototipo/objetos_mecanica5.png";
+import objetos_mecanica6 from "/assets/images/prototipo/objetos_mecanica6.png";
+
+// objetos gif
 import prototipo_objetosSrc from "/assets/gifs/prototipo_objetos/prototipo_objetos.gif";
 import objetos_mirar from "/assets/gifs/prototipo_objetos/objeto_mirar.gif";
 import objetos_objeto_correcto from "/assets/gifs/prototipo_objetos/objeto_correcto.gif";
@@ -214,7 +230,7 @@ const PrototipoMIDI = () => {
                   delinean los momentos clave y las interacciones cruciales del
                   juego.
                 </Typography>
-                <FrxImage src={portada_pocionesSrc} className="my-2" />
+                <FrxImage src={pociones_storytelling} className="my-2" />
               </div>
             </Scrollbars>
             <Scrollbars autoHeight autoHeightMin={400} autoHeightMax={600}>
@@ -238,7 +254,7 @@ const PrototipoMIDI = () => {
                     </ListItem>
                   </List>
                   <FrxImage
-                    src={portada_pocionesSrc}
+                    src={pociones_mecanica1}
                     width={300}
                     className="my-3 self-center"
                   />
@@ -256,7 +272,7 @@ const PrototipoMIDI = () => {
                     </ListItem>
                   </List>
                   <FrxImage
-                    src={portada_pocionesSrc}
+                    src={pociones_mecanica2}
                     width={300}
                     className="my-3 self-center"
                   />
@@ -274,7 +290,7 @@ const PrototipoMIDI = () => {
                     </ListItem>
                   </List>
                   <FrxImage
-                    src={portada_pocionesSrc}
+                    src={pociones_mecanica3}
                     width={300}
                     className="my-3 self-center"
                   />
@@ -292,7 +308,7 @@ const PrototipoMIDI = () => {
                     </ListItem>
                   </List>
                   <FrxImage
-                    src={portada_pocionesSrc}
+                    src={pociones_mecanica4}
                     width={300}
                     className="my-3 self-center"
                   />
@@ -311,7 +327,7 @@ const PrototipoMIDI = () => {
                     </ListItem>
                   </List>
                   <FrxImage
-                    src={portada_pocionesSrc}
+                    src={pociones_mecanica5}
                     width={300}
                     className="my-3 self-center"
                   />
@@ -331,7 +347,7 @@ const PrototipoMIDI = () => {
                     </ListItem>
                   </List>
                   <FrxImage
-                    src={portada_pocionesSrc}
+                    src={pociones_mecanica6}
                     width={300}
                     className="my-3 self-center"
                   />
@@ -443,7 +459,7 @@ const PrototipoMIDI = () => {
                   storyboard, obtenemos una visión general de como se van a
                   desarrollar un nivel y las interacciones del juego.
                 </Typography>
-                <FrxImage src={portada_pocionesSrc} className="my-2" />
+                <FrxImage src={objetos_storytelling} className="my-2" />
               </div>
             </Scrollbars>
             <Scrollbars autoHeight autoHeightMin={400} autoHeightMax={600}>
@@ -467,7 +483,7 @@ const PrototipoMIDI = () => {
                     </ListItem>
                   </List>
                   <FrxImage
-                    src={portada_pocionesSrc}
+                    src={objetos_mecanica1}
                     width={300}
                     className="my-3 self-center"
                   />
@@ -485,7 +501,7 @@ const PrototipoMIDI = () => {
                     </ListItem>
                   </List>
                   <FrxImage
-                    src={portada_pocionesSrc}
+                    src={objetos_mecanica2}
                     width={300}
                     className="my-3 self-center"
                   />
@@ -503,7 +519,7 @@ const PrototipoMIDI = () => {
                     </ListItem>
                   </List>
                   <FrxImage
-                    src={portada_pocionesSrc}
+                    src={objetos_mecanica3}
                     width={300}
                     className="my-3 self-center"
                   />
@@ -521,7 +537,7 @@ const PrototipoMIDI = () => {
                     </ListItem>
                   </List>
                   <FrxImage
-                    src={portada_pocionesSrc}
+                    src={objetos_mecanica4}
                     width={300}
                     className="my-3 self-center"
                   />
@@ -540,7 +556,7 @@ const PrototipoMIDI = () => {
                     </ListItem>
                   </List>
                   <FrxImage
-                    src={portada_pocionesSrc}
+                    src={objetos_mecanica5}
                     width={300}
                     className="my-3 self-center"
                   />
@@ -559,7 +575,7 @@ const PrototipoMIDI = () => {
                     </ListItem>
                   </List>
                   <FrxImage
-                    src={portada_pocionesSrc}
+                    src={objetos_mecanica6}
                     width={300}
                     className="my-3 self-center"
                   />
