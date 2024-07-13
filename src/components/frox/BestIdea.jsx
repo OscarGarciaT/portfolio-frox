@@ -60,7 +60,7 @@ const BestIdea = ({
             whileInView={{ opacity: 1 }}
             transition={{ delay: 0.1 }}
             viewport={{ once: true }}
-            className="w-3/4 text-left mb-5"
+            className="w-full text-center md:text-left mb-5"
           >
             <Typography fontSize={"1.3rem"} fontWeight={600}>
               Descripción
@@ -71,7 +71,7 @@ const BestIdea = ({
             whileInView={{ opacity: 1 }}
             transition={{ delay: 0.1 }}
             viewport={{ once: true }}
-            className="w-full text-justify mb-5"
+            className="w-full text-center md:text-left mb-5"
           >
             <Typography fontSize={"1.1rem"}>{generalDescription}</Typography>
           </motion.div>
@@ -80,7 +80,7 @@ const BestIdea = ({
             whileInView={{ opacity: 1 }}
             transition={{ delay: 0.1 }}
             viewport={{ once: true }}
-            className="w-3/4 text-left mb-5"
+            className="w-full text-center md:text-left mb-5"
           >
             <Typography fontSize={"1.3rem"} fontWeight={600}>
               ¿Por qué creemos que es buena?
@@ -91,7 +91,7 @@ const BestIdea = ({
             whileInView={{ opacity: 1 }}
             transition={{ delay: 0.1 }}
             viewport={{ once: true }}
-            className="w-full text-justify mb-5"
+            className="w-full text-center md:text-left mb-5"
           >
             <Typography fontSize={"1.1rem"}>{selectionDescription}</Typography>
           </motion.div>

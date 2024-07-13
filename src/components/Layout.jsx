@@ -10,6 +10,7 @@ import { Icon, Typography, useMediaQuery } from "@mui/material";
 
 import { useEffect, useState } from "react";
 import SideBarItem from "./SidebarItem";
+import Scrollbars from "rc-scrollbars";
 
 const drawerWidth = 222;
 
@@ -101,6 +102,10 @@ const Layout = ({ children, refs }) => {
     const elementPosition = element.getBoundingClientRect().top;
     const offsetPosition = elementPosition + window.scrollY - offset;
 
+    if (!isDesktop) {
+      setOpen(false);
+    }
+
     window.scrollTo({
       top: offsetPosition,
       behavior: "smooth",
@@ -164,6 +169,12 @@ const Layout = ({ children, refs }) => {
             icon={<Icon>stars</Icon>}
             label={"Mejores Ideas"}
             tabId={"mejoresideas"}
+          />
+          <SideBarItem
+            onClick={() => scrollToSection("prototipo")}
+            icon={<Icon>videogame_asset</Icon>}
+            label={"Prototipos no funcionales"}
+            tabId={"prototipo"}
           />
         </List>
       </Drawer>

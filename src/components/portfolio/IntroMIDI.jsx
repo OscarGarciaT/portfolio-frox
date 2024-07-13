@@ -24,7 +24,7 @@ const IntroMIDI = () => {
           <Typography
             fontWeight={400}
             fontSize={"1.1rem"}
-            className="text-justify"
+            className="text-center md:text-left"
           >
             Este proyecto, trabajado en conjunto con el grupo MIDI, se enfoca en
             desarrollar una experiencia de realidad aumentada en forma de
@@ -56,7 +56,7 @@ const IntroMIDI = () => {
           <Typography
             fontWeight={400}
             fontSize={"1.1rem"}
-            className="text-justify"
+            className="text-center md:text-left"
           >
             El juego a diseñar se basa en un juego de mesa existente para niños
             de 3 a 4 años, protagonizado por Gummy y otros personajes. En este

@@ -2,6 +2,7 @@ import IntroMIDI from "../components/portfolio/IntroMIDI";
 import IdeacionMIDI from "../components/portfolio/IdeacionMIDI";
 import GroupLogo from "../components/portfolio/GroupLogo";
 import MejoresIdeasMIDI from "../components/portfolio/MejoresIdeasMIDI";
+import PrototipoMIDI from "../components/portfolio/PrototipoMIDI";
 
 const Portfolio = ({ refs }) => {
   return (
@@ -17,6 +18,9 @@ const Portfolio = ({ refs }) => {
       </div>
       <div ref={refs.mejoresideas}>
         <MejoresIdeasMIDI />
+      </div>
+      <div ref={refs.prototipo}>
+        <PrototipoMIDI />
       </div>
     </div>
   );
