@@ -44,6 +44,7 @@ import pociones_pocion_incorrecta from "/assets/gifs/prototipo_pociones/chrome_V
 // objetos
 import objetos_storytelling from "/assets/images/prototipo/objetos_storytelling.jpg";
 import objetos_storytelling2 from "/assets/images/prototipo/objetos_storytelling2.jpg";
+import objetos_storytelling3 from "/assets/images/prototipo/objetos_storytelling3.jpeg";
 import objetos_mecanica1 from "/assets/images/prototipo/objetos_mecanica1.png";
 import objetos_mecanica2 from "/assets/images/prototipo/objetos_mecanica2.png";
 import objetos_mecanica3 from "/assets/images/prototipo/objetos_mecanica3.png";
@@ -462,6 +463,7 @@ const PrototipoMIDI = () => {
                   storyboard, obtenemos una visión general de como se van a
                   desarrollar un nivel y las interacciones del juego.
                 </Typography>
+                <FrxImage src={objetos_storytelling3} className="my-2" />
                 <FrxImage src={objetos_storytelling} className="my-2" />
                 <FrxImage src={objetos_storytelling2} className="my-2" />
               </div>
