@@ -180,6 +180,12 @@ const Layout = ({ children, refs }) => {
             label={"Prototipos no funcionales"}
             tabId={"prototipo"}
           />
+          <SideBarItem
+            onClick={() => scrollToSection("tecnologias")}
+            icon={<Icon>rocket_launch</Icon>}
+            label={"Tecnologias"}
+            tabId={"tecnologias"}
+          />
         </List>
       </Drawer>
       <Main open={open}>

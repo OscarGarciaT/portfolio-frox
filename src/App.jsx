@@ -61,6 +61,7 @@ const App = () => {
     ideacion: useRef(null),
     mejoresideas: useRef(null),
     prototipo: useRef(null),
+    tecnologias: useRef(null),
   };
 
   return (
