@@ -72,9 +72,16 @@ const Layout = ({ children, refs }) => {
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
+    const url = new URL(window.location.href);
+    const section = url.searchParams.get("section");
+
     setTimeout(() => {
       if (isDesktop) {
         setOpen(true);
+      }
+
+      if (section) {
+        scrollToSection(section);
       }
     }, 900);
   }, []);
@@ -163,6 +170,12 @@ const Layout = ({ children, refs }) => {
             tabId={"intro"}
           />
           <SideBarItem
+            onClick={() => scrollToSection("cronograma")}
+            icon={<Icon>calendar_month</Icon>}
+            label={"Cronograma"}
+            tabId={"cronograma"}
+          />
+          <SideBarItem
             onClick={() => scrollToSection("ideacion")}
             icon={<Icon>lightbulb</Icon>}
             label={"Ideación"}
@@ -181,10 +194,34 @@ const Layout = ({ children, refs }) => {
             tabId={"prototipo"}
           />
           <SideBarItem
+            onClick={() => scrollToSection("mejoridea")}
+            icon={<Icon>bookmark_star</Icon>}
+            label={"Mejor Idea"}
+            tabId={"mejoridea"}
+          />
+          <SideBarItem
             onClick={() => scrollToSection("tecnologias")}
             icon={<Icon>rocket_launch</Icon>}
             label={"Tecnologias"}
             tabId={"tecnologias"}
+          />
+          <SideBarItem
+            onClick={() => scrollToSection("desarrollo1")}
+            icon={<Icon>construction</Icon>}
+            label={"Desarrollo S1"}
+            tabId={"desarrollo1"}
+          />
+          <SideBarItem
+            onClick={() => scrollToSection("desarrollo2")}
+            icon={<Icon>construction</Icon>}
+            label={"Desarrollo S2"}
+            tabId={"desarrollo2"}
+          />
+          <SideBarItem
+            onClick={() => scrollToSection("playtesting")}
+            icon={<Icon>sports_esports</Icon>}
+            label={"Playtesting"}
+            tabId={"playtesting"}
           />
         </List>
       </Drawer>

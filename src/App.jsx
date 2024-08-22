@@ -58,10 +58,15 @@ const App = () => {
   const refs = {
     somos: useRef(null),
     intro: useRef(null),
+    cronograma: useRef(null),
     ideacion: useRef(null),
     mejoresideas: useRef(null),
+    mejoridea: useRef(null),
     prototipo: useRef(null),
     tecnologias: useRef(null),
+    desarrollo1: useRef(null),
+    desarrollo2: useRef(null),
+    playtesting: useRef(null),
   };
 
   return (
@@ -69,7 +74,7 @@ const App = () => {
       <ThemeProvider theme={theme}>
         <CssBaseline />
         <Layout refs={refs}>
-          <Portfolio refs={refs}/>
+          <Portfolio refs={refs} />
         </Layout>
       </ThemeProvider>
     </StyledEngineProvider>

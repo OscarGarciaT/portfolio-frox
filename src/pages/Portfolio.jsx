@@ -4,6 +4,11 @@ import GroupLogo from "../components/portfolio/GroupLogo";
 import MejoresIdeasMIDI from "../components/portfolio/MejoresIdeasMIDI";
 import PrototipoMIDI from "../components/portfolio/PrototipoMIDI";
 import TecnologiasMIDI from "../components/portfolio/TecnologiasMIDI";
+import CronogramaMIDI from "../components/portfolio/CronogramaMIDI";
+import MejorIdeaMIDI from "../components/portfolio/MejorIdeaMIDI";
+import Desarrollo1MIDI from "../components/portfolio/Desarrollo1MIDI";
+import Desarrollo2MIDI from "../components/portfolio/Desarrollo2MIDI";
+import PlaytestingMIDI from "../components/portfolio/PlaytestingMIDI";
 
 const Portfolio = ({ refs }) => {
   return (
@@ -14,6 +19,9 @@ const Portfolio = ({ refs }) => {
       <div ref={refs.intro}>
         <IntroMIDI />
       </div>
+      <div ref={refs.cronograma}>
+        <CronogramaMIDI />
+      </div>
       <div ref={refs.ideacion}>
         <IdeacionMIDI />
       </div>
@@ -23,8 +31,20 @@ const Portfolio = ({ refs }) => {
       <div ref={refs.prototipo}>
         <PrototipoMIDI />
       </div>
+      <div ref={refs.mejoridea}>
+        <MejorIdeaMIDI />
+      </div>
       <div ref={refs.tecnologias}>
         <TecnologiasMIDI />
+      </div>
+      <div ref={refs.desarrollo1}>
+        <Desarrollo1MIDI />
+      </div>
+      <div ref={refs.desarrollo2}>
+        <Desarrollo2MIDI />
+      </div>
+      <div ref={refs.playtesting}>
+        <PlaytestingMIDI />
       </div>
     </div>
   );

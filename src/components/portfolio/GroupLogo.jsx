@@ -40,7 +40,7 @@ const GroupLogo = () => {
           role={"Game Designer"}
           delay={0.65}
         />
-        <AnimatedAvatar
+        {/* <AnimatedAvatar
           src={juanAvatar}
           name={"Juan Jimenez"}
           role={"Game Designer"}
@@ -51,7 +51,7 @@ const GroupLogo = () => {
           name={"Frank Vera"}
           role={"Game Designer"}
           delay={0.75}
-        />
+        /> */}
       </div>
     </div>
   );

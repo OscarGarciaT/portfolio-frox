@@ -152,7 +152,7 @@ const PrototipoMIDI = () => {
           className="w-full mb-6 md:mb-1 md:mr-10 "
         >
           <Divider />
-          <div className="flex justify-center items-center my-5 mx-5 md:mx-20 rounded-lg  bg-green-200">
+          <div className="flex justify-center items-center my-5 mx-0 md:mx-20 rounded-lg  bg-green-200">
             <motion.div className="flex w-full justify-center items-center">
               <Typography className="text-center" fontSize={"4rem"}>
                 Prototipos No Funcionales

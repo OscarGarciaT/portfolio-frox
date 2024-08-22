@@ -32,7 +32,7 @@ const TechMIDI = ({ src, action, alt }) => {
   return (
     <Card
       sx={{
-        maxWidth: !isDesktop ? 400 : 200,
+        maxWidth: !isDesktop ? 350 : 200,
         marginBottom: !isDesktop ? 6 : 0,
         transition: "transform 0.3s ease-in-out", // Add this line
         "&:hover": {
@@ -91,7 +91,7 @@ const TecnologiasMIDI = () => {
   return (
     <>
       <Divider className="mt-10" />
-      <div className="flex justify-center items-center my-5 mx-5 md:mx-20 rounded-lg  bg-green-200">
+      <div className="flex justify-center items-center my-5 mx-0 md:mx-20 rounded-lg  bg-green-200">
         <motion.div className="flex w-full justify-center items-center">
           <Typography className="text-center" fontSize={"4rem"}>
             Tecnologias
