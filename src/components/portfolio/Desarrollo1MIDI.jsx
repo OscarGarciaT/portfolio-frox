@@ -1,5 +1,6 @@
 import { Divider, Typography } from "@mui/material";
 import { motion } from "framer-motion";
+import InConstruction from "../InConstruction";
 
 const Desarrollo1MIDI = () => {
   return (
@@ -13,6 +14,7 @@ const Desarrollo1MIDI = () => {
         </motion.div>
       </div>
       <Divider className="mb-10" />
+      <InConstruction />
     </>
   );
 };
