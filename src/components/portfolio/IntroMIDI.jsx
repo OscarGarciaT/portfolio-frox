@@ -35,9 +35,9 @@ const IntroMIDI = () => {
             Este proyecto, trabajado en conjunto con el grupo MIDI, se enfoca en
             desarrollar una experiencia de realidad aumentada en forma de
             videojuego para niños de 3 a 4 años. En este juego, los jugadores
-            tienen como objetivo descubrir las emociones de Gummy, el dragón
+            tienen como objetivo descubrir las emociones de Gommi, el dragón
             protagonista. Gracias a la tecnología de realidad aumentada, los
-            niños podrán ver a Gummy interactuando dentro de su entorno real, lo
+            niños podrán ver a Gommi interactuando dentro de su entorno real, lo
             que hará que su experiencia sea mucho más emocionante. Las mecánicas
             del juego serán sencillas y fáciles de aprender, aprovechando al
             máximo el potencial que ofrece la realidad aumentada. Este enfoque
@@ -65,12 +65,12 @@ const IntroMIDI = () => {
             className="text-center md:text-left"
           >
             El juego a diseñar se basa en un juego de mesa existente para niños
-            de 3 a 4 años, protagonizado por Gummy y otros personajes. En este
+            de 3 a 4 años, protagonizado por Gommi y otros personajes. En este
             juego, los jugadores revisan una serie de páginas con diferentes
             actividades que deben resolver. Una de estas actividades consiste en
-            identificar las emociones del dragón Gummy. A los niños se les
+            identificar las emociones del dragón Gommi. A los niños se les
             presentan diversas expresiones faciales del dragón y deben
-            determinar qué emoción está experimentando Gummy en cada caso. El
+            determinar qué emoción está experimentando Gommi en cada caso. El
             grupo MIDI ha aspirado a llevar esta experiencia a los juegos
             digitales y, más allá, a los juegos de realidad aumentada. Es en
             este contexto donde nuestro grupo entra en acción, generando ideas

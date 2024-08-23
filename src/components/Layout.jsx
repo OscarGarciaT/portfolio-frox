@@ -14,6 +14,7 @@ import SideBarItem from "./SidebarItem";
 import FrxImage from "./multimedia/FrxImage";
 
 import logoTransparentSrc from "/assets/images/logos/logo_transparent.png";
+import { useLocation } from "react-router-dom";
 
 const drawerWidth = 222;
 
@@ -66,22 +67,19 @@ const DrawerHeader = styled("div")(({ theme }) => ({
 }));
 
 const Layout = ({ children, refs }) => {
+  const location = useLocation();
   const theme = useTheme();
   const isDesktop = useMediaQuery(theme.breakpoints.up("md"));
 
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
-    const url = new URL(window.location.href);
-    const section = url.searchParams.get("section");
+    const params = new URLSearchParams(location.search);
+    const section = params.get("section");
 
     setTimeout(() => {
-      if (isDesktop) {
+      if (isDesktop && !section) {
         setOpen(true);
-      }
-
-      if (section) {
-        scrollToSection(section);
       }
     }, 900);
   }, []);
@@ -101,6 +99,15 @@ const Layout = ({ children, refs }) => {
       document.documentElement.style.overflowX = "auto";
     };
   }, [open]);
+
+  useEffect(() => {
+    const params = new URLSearchParams(location.search);
+
+    const section = params.get("section");
+    if (section) {
+      scrollToSection(section);
+    }
+  }, [location]);
 
   const handleDrawerToggle = () => {
     setOpen((prevValue) => !prevValue);

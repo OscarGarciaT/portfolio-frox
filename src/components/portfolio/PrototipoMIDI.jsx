@@ -37,7 +37,7 @@ import pociones_mecanica6 from "/assets/images/prototipo/pociones_mecanica6.png"
 import prototipo_pocionesSrc from "/assets/gifs/prototipo_pociones/prototipo_pociones.gif";
 import pociones_mirar from "/assets/gifs/prototipo_pociones/chrome_FCsiLaVqdo.gif";
 import pociones_pocion_correcta from "/assets/gifs/prototipo_pociones/chrome_hADGapusu3.gif";
-import pociones_mirar_gummy from "/assets/gifs/prototipo_pociones/chrome_RqQ5dPMFHT.gif";
+import pociones_mirar_Gommi from "/assets/gifs/prototipo_pociones/chrome_RqQ5dPMFHT.gif";
 import pociones_seleccionar_pocion from "/assets/gifs/prototipo_pociones/chrome_sPbJGRXRXT.gif";
 import pociones_pocion_incorrecta from "/assets/gifs/prototipo_pociones/chrome_VFNWQK83dk.gif";
 
@@ -56,7 +56,7 @@ import objetos_mecanica6 from "/assets/images/prototipo/objetos_mecanica6.png";
 import prototipo_objetosSrc from "/assets/gifs/prototipo_objetos/prototipo_objetos.gif";
 import objetos_mirar from "/assets/gifs/prototipo_objetos/objeto_mirar.gif";
 import objetos_objeto_correcto from "/assets/gifs/prototipo_objetos/objeto_correcto.gif";
-import objetos_mirar_gummy from "/assets/gifs/prototipo_objetos/objeto_mirar_gummy.gif";
+import objetos_mirar_Gommi from "/assets/gifs/prototipo_objetos/objeto_mirar_Gommi.gif";
 import objetos_seleccionar_objeto from "/assets/gifs/prototipo_objetos/objeto_seleccionar.gif";
 import objetos_objeto_incorrecto from "/assets/gifs/prototipo_objetos/objeto_incorrecto.gif";
 
@@ -254,7 +254,7 @@ const PrototipoMIDI = () => {
                     </ListItem>
                     <ListItem>
                       &bull; En un lugar del entorno se encuentra el dragón
-                      Gummy, que está experimentando una emoción negativa.
+                      Gommi, que está experimentando una emoción negativa.
                     </ListItem>
                   </List>
                   <FrxImage
@@ -268,7 +268,7 @@ const PrototipoMIDI = () => {
                   <List>
                     <ListItem>
                       &bull; El jugador debe usar la cámara para encontrar y
-                      mantener al dragón Gummy en el campo de visión.
+                      mantener al dragón Gommi en el campo de visión.
                     </ListItem>
                     <ListItem>
                       &bull; El jugador tiene una serie de pociones que puede
@@ -285,11 +285,11 @@ const PrototipoMIDI = () => {
                   </Typography>
                   <List>
                     <ListItem>
-                      &bull; Mejorar el estado emocional del dragón Gummy
+                      &bull; Mejorar el estado emocional del dragón Gommi
                       arrojándole la poción correcta.
                     </ListItem>
                     <ListItem>
-                      &bull; El nivel se completa cuando el dragón Gummy recibe
+                      &bull; El nivel se completa cuando el dragón Gommi recibe
                       la poción correcta y se siente mejor.
                     </ListItem>
                   </List>
@@ -304,7 +304,7 @@ const PrototipoMIDI = () => {
                   <List>
                     <ListItem>
                       &bull; Si el jugador le arroja la poción incorrecta, el
-                      dragón Gummy hará una cara de asco y rechazará la poción.
+                      dragón Gommi hará una cara de asco y rechazará la poción.
                     </ListItem>
                     <ListItem>
                       &bull; El jugador recibe una indicación visual (cara de
@@ -342,7 +342,7 @@ const PrototipoMIDI = () => {
                     <ListItem>
                       &bull; El progreso del jugador se mide por la cantidad de
                       niveles completados al arrojar la poción correcta al
-                      dragón Gummy.
+                      dragón Gommi.
                     </ListItem>
                     <ListItem>
                       &bull; La reacción del dragón (cara de asco o mejora
@@ -390,16 +390,16 @@ const PrototipoMIDI = () => {
                     className="my-3 self-center"
                   />
                   <Typography className="text-center md:text-left">
-                    El jugador encuentra al dragón Gummy y se prepara para
+                    El jugador encuentra al dragón Gommi y se prepara para
                     lanzar una poción
                   </Typography>
                   <FrxImage
-                    src={pociones_mirar_gummy}
+                    src={pociones_mirar_Gommi}
                     width={300}
                     className="my-3 self-center"
                   />
                   <Typography className="text-center md:text-left">
-                    El jugador lanza una poción al dragón Gummy y recibe
+                    El jugador lanza una poción al dragón Gommi y recibe
                     feedback inmediato
                   </Typography>
                   <FrxImage
@@ -417,7 +417,7 @@ const PrototipoMIDI = () => {
                     className="my-3 self-center"
                   />
                   <Typography className="text-center md:text-left">
-                    El jugador lanza la poción correcta y el dragón Gummy se
+                    El jugador lanza la poción correcta y el dragón Gommi se
                     siente mejor y sonríe al jugador, completando el nivel
                   </Typography>
                   <FrxImage
@@ -484,7 +484,7 @@ const PrototipoMIDI = () => {
                       explorar su entorno.
                     </ListItem>
                     <ListItem>
-                      &bull; En algún lugar del entorno, el dragón Gummy se
+                      &bull; En algún lugar del entorno, el dragón Gommi se
                       encuentra y su malestar depende del entorno.
                     </ListItem>
                   </List>
@@ -498,7 +498,7 @@ const PrototipoMIDI = () => {
                   </Typography>
                   <List>
                     <ListItem>
-                      &bull; El jugador debe localizar al dragón Gummy usando la
+                      &bull; El jugador debe localizar al dragón Gommi usando la
                       cámara y mantenerlo a la vista.
                     </ListItem>
                     <ListItem>
@@ -516,11 +516,11 @@ const PrototipoMIDI = () => {
                   </Typography>
                   <List>
                     <ListItem>
-                      &bull; Mejorar el estado del dragón Gummy al ofrecerle el
+                      &bull; Mejorar el estado del dragón Gommi al ofrecerle el
                       objeto adecuado para su situación.
                     </ListItem>
                     <ListItem>
-                      &bull; El nivel se completa cuando el dragón Gummy recibe
+                      &bull; El nivel se completa cuando el dragón Gommi recibe
                       el objeto correcto y se siente mejor.
                     </ListItem>
                   </List>
@@ -535,7 +535,7 @@ const PrototipoMIDI = () => {
                   <List>
                     <ListItem>
                       &bull; Si el jugador le ofrece el objeto incorrecto, el
-                      dragón Gummy hará una cara de asco y rechazará el objeto.
+                      dragón Gommi hará una cara de asco y rechazará el objeto.
                     </ListItem>
                     <ListItem>
                       &bull; El jugador ve una reacción negativa (cara de asco)
@@ -572,7 +572,7 @@ const PrototipoMIDI = () => {
                   <List>
                     <ListItem>
                       &bull; El progreso se mide por la cantidad de niveles
-                      completados al ofrecer el objeto correcto al dragón Gummy.
+                      completados al ofrecer el objeto correcto al dragón Gommi.
                     </ListItem>
                     <ListItem>
                       &bull; Las reacciones del dragón (cara de asco o mejora
@@ -620,16 +620,16 @@ const PrototipoMIDI = () => {
                     className="my-3 self-center"
                   />
                   <Typography className="text-center md:text-left">
-                    El jugador encuentra al dragón Gummy y nota que se siente
+                    El jugador encuentra al dragón Gommi y nota que se siente
                     mal por el clima lluvioso.
                   </Typography>
                   <FrxImage
-                    src={objetos_mirar_gummy}
+                    src={objetos_mirar_Gommi}
                     width={300}
                     className="my-3 self-center"
                   />
                   <Typography className="text-center md:text-left">
-                    El jugador le ofrece un objeto al dragón Gummy y recibe un
+                    El jugador le ofrece un objeto al dragón Gommi y recibe un
                     feedback inmediato de que el objeto fue incorrecto.
                   </Typography>
                   <FrxImage
@@ -639,7 +639,7 @@ const PrototipoMIDI = () => {
                   />
                   <Typography className="text-center md:text-left">
                     El jugador al notar que el objeto fue incorrecto, selecciona
-                    y se prepara para ofrecer otro objeto al dragón Gummy.
+                    y se prepara para ofrecer otro objeto al dragón Gommi.
                   </Typography>
                   <FrxImage
                     src={objetos_seleccionar_objeto}
@@ -647,8 +647,8 @@ const PrototipoMIDI = () => {
                     className="my-3 self-center"
                   />
                   <Typography className="text-center md:text-left">
-                    El jugador le ofrece el objeto correcto al dragón Gummy y el
-                    dragón Gummy se siente mejor y sonríe al jugador,
+                    El jugador le ofrece el objeto correcto al dragón Gommi y el
+                    dragón Gommi se siente mejor y sonríe al jugador,
                     completando el nivel.
                   </Typography>
                   <FrxImage
