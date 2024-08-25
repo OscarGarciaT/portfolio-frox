@@ -9,6 +9,7 @@ import MejorIdeaMIDI from "../components/portfolio/MejorIdeaMIDI";
 import Desarrollo1MIDI from "../components/portfolio/Desarrollo1MIDI";
 import Desarrollo2MIDI from "../components/portfolio/Desarrollo2MIDI";
 import PlaytestingMIDI from "../components/portfolio/PlaytestingMIDI";
+import HomepageMIDI from "../components/portfolio/HomepageMIDI";
 
 const Portfolio = ({ refs }) => {
   return (
@@ -45,6 +46,9 @@ const Portfolio = ({ refs }) => {
       </div>
       <div ref={refs.playtesting}>
         <PlaytestingMIDI />
+      </div>
+      <div ref={refs.homepage}>
+        <HomepageMIDI />
       </div>
     </div>
   );

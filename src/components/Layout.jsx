@@ -230,6 +230,12 @@ const Layout = ({ children, refs }) => {
             label={"Playtesting"}
             tabId={"playtesting"}
           />
+          <SideBarItem
+            onClick={() => scrollToSection("homepage")}
+            icon={<Icon>house</Icon>}
+            label={"Homepage"}
+            tabId={"homepage"}
+          />
         </List>
       </Drawer>
       <Main open={open}>

@@ -7,6 +7,7 @@ import {
 import Layout from "./components/Layout";
 import Portfolio from "./pages/Portfolio";
 import { useRef } from "react";
+import { BrowserRouter as Router } from "react-router-dom";
 
 const theme = createTheme({
   breakpoints: {
@@ -67,15 +68,18 @@ const App = () => {
     desarrollo1: useRef(null),
     desarrollo2: useRef(null),
     playtesting: useRef(null),
+    homepage: useRef(null),
   };
 
   return (
     <StyledEngineProvider injectFirst>
       <ThemeProvider theme={theme}>
         <CssBaseline />
-        <Layout refs={refs}>
-          <Portfolio refs={refs} />
-        </Layout>
+        <Router>
+          <Layout refs={refs}>
+            <Portfolio refs={refs} />
+          </Layout>
+        </Router>
       </ThemeProvider>
     </StyledEngineProvider>
   );
