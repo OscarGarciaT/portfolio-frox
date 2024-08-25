@@ -1,6 +1,9 @@
 import { Divider, Typography, Grid, Paper, Box } from "@mui/material";
 import { motion } from "framer-motion";
 
+import usuario1 from "/assets/images/playtesting/usuario1.jpeg";
+import usuario2 from "/assets/images/playtesting/usuario2.jpeg";
+
 const PlaytestingMIDI = () => {
   return (
     <>
@@ -75,11 +78,18 @@ const PlaytestingMIDI = () => {
                   initial={{ opacity: 0, scale: 0.8 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.5 }}
-                  className="w-full h-64 bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 rounded-lg flex items-center justify-center"
+                  className="w-full bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 rounded-lg flex items-center justify-center"
                 >
-                  <Typography variant="body1" color="textSecondary">
-                    [Placeholder for User 1 Playtest Image]
-                  </Typography>
+                  <img
+                    src={usuario1}
+                    alt="User 1 Playtest Image"
+                    style={{
+                      width: "100%",
+                      height: "auto",
+                      objectFit: "cover",
+                      borderRadius: "0.5rem",
+                    }}
+                  />
                 </motion.div>
               </Box>
             </Paper>
@@ -119,11 +129,18 @@ const PlaytestingMIDI = () => {
                   initial={{ opacity: 0, scale: 0.8 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.5 }}
-                  className="w-full h-64 bg-gradient-to-r from-teal-400 via-blue-500 to-purple-500 rounded-lg flex items-center justify-center"
+                  className="w-full bg-gradient-to-r from-teal-400 via-blue-500 to-purple-500 rounded-lg flex items-center justify-center"
                 >
-                  <Typography variant="body1" color="textSecondary">
-                    [Placeholder for User 2 Playtest Image]
-                  </Typography>
+                  <img
+                    src={usuario2}
+                    alt="User 2 Playtest Image"
+                    style={{
+                      width: "100%",
+                      height: "auto",
+                      objectFit: "cover",
+                      borderRadius: "0.5rem",
+                    }}
+                  />
                 </motion.div>
               </Box>
             </Paper>
